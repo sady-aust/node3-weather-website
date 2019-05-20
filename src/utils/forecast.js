@@ -11,7 +11,7 @@ let forecast = (lat,long,callback)=>{
          callback("Unable to find location",undefined);
      }
      else if(body){
-         callback(undefined,"There is a "+body.currently.precipProbability+"% Chance of rain.");
+         callback(undefined,"There is a "+body.currently.precipProbability+"% Chance of rain. And temperature "+body.currently.temperature);
      }
 
     });
